@@ -5,19 +5,16 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-
-/****
+/***
  * 
- * 
+ * Cette Annotation est pour instancie une seul instance (Singleton)
  * 
  * @author abdelkhalek BENHOUMINE
- * Annotation pour injecter un objet
+ * 
  *
  */
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.FIELD)
-public @interface Inject {
-	
-    public String value() default "";
-    
+@Target(ElementType.TYPE)
+public @interface OnlyOne {
+
 }

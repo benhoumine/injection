@@ -5,19 +5,14 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-
-/****
+/***
  * 
- * 
- * 
+ * cette annotation est pour spécifier à l'utilisateur la classe par defaut
  * @author abdelkhalek BENHOUMINE
- * Annotation pour injecter un objet
  *
  */
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.FIELD)
-public @interface Inject {
-	
-    public String value() default "";
-    
+@Target(ElementType.TYPE)
+public @interface Default {
+
 }
