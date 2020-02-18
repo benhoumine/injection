@@ -1,8 +1,8 @@
 package com.benhoumine.inject.main.model;
 
-import com.benhoumine.inject.annotations.OnlyOne;
+import com.benhoumine.inject.annotations.OneInstance;
 
-@OnlyOne
+@OneInstance
 public class BMCI implements Bank {
 
 	private static int compteur = 0;

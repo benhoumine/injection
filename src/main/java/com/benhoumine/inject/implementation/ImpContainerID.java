@@ -17,13 +17,13 @@ import com.benhoumine.inject.logs.CustomLog;
 @SuppressWarnings("rawtypes")
 public class ImpContainerID implements IContainerDI {
 
-	private ImpOnlyOne onlyOneInitialisation;
+	private ImpOneInstance onlyOneInitialisation;
 	private static final CustomLog LOGGER = new CustomLog();
 	
 	//Constructeur
 	public ImpContainerID() {
 		LOGGER.info("(===>  INITIALISATION PLUGIN INJECTION ('-') Abdelkhalek BENHOUMINE <===)");
-		onlyOneInitialisation = ImpOnlyOne.getInstanceOnlyOne();
+		onlyOneInitialisation = ImpOneInstance.getInstanceOnlyOne();
 	}
 
 	// Cette méthode est pour trouver toutes les classes qui existe dans un package
@@ -100,7 +100,7 @@ public class ImpContainerID implements IContainerDI {
 			Class[] classes = getClasses(packageName);
 			for (Class clazz : classes) {
 				for (Annotation annotation : clazz.getDeclaredAnnotations()) {
-					if (annotation.toString().contains("OnlyOne")) {
+					if (annotation.toString().contains("OneInstance")) {
 						onlyOneInitialisation.insertObject(clazz.toString(), clazz.newInstance());
 					}
 				}
@@ -140,7 +140,7 @@ public class ImpContainerID implements IContainerDI {
 		return packageName;
 	}
 
-	public ImpOnlyOne getOnlyOneInitialisation() {
+	public ImpOneInstance getOnlyOneInitialisation() {
 		return onlyOneInitialisation;
 	}
 }
