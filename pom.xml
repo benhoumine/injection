@@ -6,8 +6,8 @@
 	<artifactId>InjectMaven</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<properties>
-	   <maven.compiler.source>1.7</maven.compiler.source>
-  	  <maven.compiler.target>1.7</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -33,4 +33,13 @@
 			<version>1.7.5</version>
 		</dependency>
 	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M1</version>
+			</plugin>
+		</plugins>
+	</build>
 </project>

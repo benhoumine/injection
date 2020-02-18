@@ -24,7 +24,7 @@ public class ContainerTest {
 	@DisplayName("Test Injection Bank")
 	void TestBank() throws ClassNotFoundException, InstantiationException, IllegalAccessException, IOException,
 			AucuneImplementationException {
-		BudgetModule module = new BudgetModule();
+		BudgetModule module = container.newInstance(BudgetModule.class);
 		container.injectClass(module);
 		assertTrue(module.getBank() instanceof BMCI);
 
