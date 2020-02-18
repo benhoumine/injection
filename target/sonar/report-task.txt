@@ -1,7 +1,0 @@
-organization=benhoumine-github
-projectKey=benhoumine_injection
-serverUrl=https://sonarcloud.io
-serverVersion=8.0.0.4497
-dashboardUrl=https://sonarcloud.io/dashboard?id=benhoumine_injection
-ceTaskId=AXA5BZEKygnXKWQ-rf8m
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXA5BZEKygnXKWQ-rf8m

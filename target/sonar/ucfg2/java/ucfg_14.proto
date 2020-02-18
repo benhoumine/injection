@@ -1,16 +1,0 @@
-
-\com.benhoumine.inject.container.ContainerID#newInstance(Ljava/lang/Class;)Ljava/lang/Object;q
-g/Users/mac/eclipse-workspace/InjectMaven/src/main/java/com/benhoumine/inject/container/ContainerID.java9 9("1*Ú
-1q
-g/Users/mac/eclipse-workspace/InjectMaven/src/main/java/com/benhoumine/inject/container/ContainerID.java:	 :(áÞ
-q
-g/Users/mac/eclipse-workspace/InjectMaven/src/main/java/com/benhoumine/inject/container/ContainerID.java:	 :("
-%0T"/java.lang.Class#newInstance()Ljava/lang/Object;* 
-
-classObjectjava.lang.Class2newInstance()"~
-q
-g/Users/mac/eclipse-workspace/InjectMaven/src/main/java/com/benhoumine/inject/container/ContainerID.java: :(#	
-
-%0T:
-classObjectjava.lang.ClassB/-
-+com.benhoumine.inject.container.ContainerID
