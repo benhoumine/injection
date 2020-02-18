@@ -2,4 +2,4 @@
 
 
 Auteur  : Abdelkhalek BENHOUMINE
-et MAMADOU Bane
+et Mamadou BANE
