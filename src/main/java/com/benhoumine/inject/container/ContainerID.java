@@ -41,7 +41,7 @@ public class ContainerID {
 							.getTypeAInstancier(impContainerId.getClassUsingValueAnnotation(valueAnnotation,
 									impContainerId.getClassImplementInterface(packageJava, interfaceDeclaration))));
 					Object obj = null;
-					if (impContainerId.getOnlyOneInitialisation().getOnlyOnes().containsKey(cls.toString())) {
+					if (impContainerId.getOnlyOneInitialisation().getInstances().containsKey(cls.toString())) {
 						obj = impContainerId.getOnlyOneInitialisation().getObject(cls.toString());
 					} else {
 						obj = cls.newInstance();
