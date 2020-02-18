@@ -1,13 +1,6 @@
 package com.benhoumine.inject.main.model;
 
-public class Film {
+public interface Film {
 
-		public Film() {
-			//Constructor
-		}
-
-		@Override
-		public String toString() {
-			return "Film ";
-		}	
+		
 }
