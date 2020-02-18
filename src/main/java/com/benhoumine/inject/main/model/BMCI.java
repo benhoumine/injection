@@ -14,5 +14,4 @@ public class BMCI implements Bank {
 	public int getCompter() {
 		return compteur;
 	}
-
 }

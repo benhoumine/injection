@@ -1,5 +1,13 @@
 package com.benhoumine.inject.exceptions;
 
+
+/***
+ * 
+ * 
+ * Cette Exception se déclenche lorsqu'il n'y a aucune implémentation pour une interface
+ *
+ *
+ */
 public class AucuneImplementationException extends Exception {
 
 	/**

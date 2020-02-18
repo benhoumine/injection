@@ -12,5 +12,10 @@ public class EmployeBMCIBANK implements Employe {
 	public int getCompter() {
 		return compteur;
 	}
+	
+
+	public static void initialiserEmployeBMCICompteur() {
+		compteur = 0 ; 
+	}
 
 }

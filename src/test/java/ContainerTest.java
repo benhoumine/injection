@@ -72,17 +72,20 @@ public class ContainerTest {
 	@DisplayName("Test OnlyOne annotation - Singleton")
 	void TestOnlyOneSingleton() throws ClassNotFoundException, InstantiationException, IllegalAccessException,
 			IOException, AucuneImplementationException {
+		//pour remettre le compteur à 0
+		EmployeBMCIBANK.initialiserEmployeBMCICompteur();
+		
 		BudgetModule module = new BudgetModule();
 		container.injectClass(module);
 		assertTrue(module.getBank() instanceof BMCI);
 		assertTrue(module.getInterneBMCI() instanceof EmployeBMCIBANK);
 		assertEquals(((BMCI) module.getBank()).getCompter() , 1);
-		assertEquals(((EmployeBMCIBANK) module.getInterneBMCI()).getCompter() , 4);
+		assertEquals(((EmployeBMCIBANK) module.getInterneBMCI()).getCompter() , 1);
 		TestOnlyOne singleton = new TestOnlyOne();
 		container.injectClass(singleton);
 		assertTrue(singleton.getBank() instanceof BMCI);
 		assertEquals(((BMCI) singleton.getBank()).getCompter(), 1);
-		assertEquals(((EmployeBMCIBANK) module.getInterneBMCI()).getCompter() , 5);
+		assertEquals(((EmployeBMCIBANK) module.getInterneBMCI()).getCompter() , 2);
 
 	}
 

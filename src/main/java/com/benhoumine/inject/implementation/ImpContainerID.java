@@ -20,7 +20,7 @@ public class ImpContainerID implements IContainerDI {
 	private ImpOnlyOne onlyOneInitialisation;
 	private static final CustomLog LOGGER = new CustomLog();
 	
-
+	//Constructeur
 	public ImpContainerID() {
 		LOGGER.info("(===>  INITIALISATION PLUGIN INJECTION ('-') Abdelkhalek BENHOUMINE <===)");
 		onlyOneInitialisation = ImpOnlyOne.getInstanceOnlyOne();
